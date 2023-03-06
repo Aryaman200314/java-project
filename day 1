@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class project2 {
+    private static ArrayList<String> authorizedVehicles = new ArrayList<String>();
+    private static ArrayList<String> parkedVehicles = new ArrayList<String>();
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Add some authorized vehicles to the list
+        authorizedVehicles.add("ABC123, John ");
+        authorizedVehicles.add("DEF456, Jane ");
+        authorizedVehicles.add("PB10GX9223, Aryaman");
