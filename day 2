@@ -1,0 +1,43 @@
+  public static void main(String[] args)
+  {
+        Scanner scanner = new Scanner(System.in);
+
+        // Add some authorized vehicles to the list
+        authorizedVehicles.add("ABC123, John ");
+        authorizedVehicles.add("DEF456, Jane ");
+        authorizedVehicles.add("PB10GX9223, Aryaman");
+
+        while (true) {
+            // Display menu options
+            // making of while loop for case statements
+            System.out.println("1. Park a vehicle");
+            System.out.println("2. Remove a vehicle from the car park");
+            System.out.println("3. View parked vehicles");
+            System.out.println("4. View registered vehicles");
+            System.out.println("5. Exit");
+
+            // Get user input
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+
+            // Process user choice
+            switch (choice) {
+                case 1:
+                    parkVehicle();
+                    break;
+                case 2:
+                    removeVehicle();
+                    break;
+                case 3:
+                    viewParkedVehicles();
+                    break;
+                case 4:
+                    viewAuthorizedVehicles();
+                    break;
+                case 5:
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
