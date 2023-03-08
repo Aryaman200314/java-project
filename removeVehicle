@@ -1,0 +1,14 @@
+private static void removeVehicle() {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the license plate number of the vehicle to be removed
+        System.out.print("Enter the license plate number of the vehicle: ");
+        String licensePlateNumber = scanner.nextLine();
+
+        if (!parkedVehicles.contains(licensePlateNumber)) {
+            System.out.println("Vehicle not parked in the car park.");
+        } else {
+            parkedVehicles.remove(licensePlateNumber);
+            System.out.println("Vehicle removed successfully.");
+        }
+    }
