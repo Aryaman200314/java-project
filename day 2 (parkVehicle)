@@ -1,0 +1,28 @@
+private static void parkVehicle() {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the license plate number of the vehicle to be parked
+        System.out.print("Enter the license plate number of the vehicle: ");
+        String licensePlateNumber = scanner.nextLine();
+
+        // Check if the vehicle is authorized to park in the car park
+        boolean isAuthorized = false;
+        String ownerName = "";
+        for (String authorizedVehicle : authorizedVehicles) {
+            if (authorizedVehicle.startsWith(licensePlateNumber + ",")) {
+                isAuthorized = true;
+                ownerName = authorizedVehicle.substring(licensePlateNumber.length() + 2);
+                break;
+            }
+        }
+
+        if (!isAuthorized) {
+            System.out.println("Vehicle not authorized to park in the car park.");
+        } else if (parkedVehicles.contains(licensePlateNumber)) {
+            System.out.println("Vehicle already parked in the car park.");
+        } else {
+            parkedVehicles.add(licensePlateNumber);
+            System.out.println("Vehicle parked successfully.");
+            System.out.println("Owner name: " + ownerName);
+        }
+    }
