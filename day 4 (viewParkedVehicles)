@@ -1,0 +1,10 @@
+private static void viewParkedVehicles() {
+        if (parkedVehicles.size() == 0) {
+            System.out.println("No vehicles parked in the car park.");
+        } else {
+            System.out.println("Parked vehicles:");
+            for (String parkedVehicle : parkedVehicles) {
+                System.out.println(parkedVehicle);
+            }
+        }
+    }
