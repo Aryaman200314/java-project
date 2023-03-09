@@ -1,0 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class project2 {
+    private static ArrayList<String> authorizedVehicles = new ArrayList<String>();
+    private static ArrayList<String> parkedVehicles = new ArrayList<String>();
