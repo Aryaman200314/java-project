@@ -1,0 +1,7 @@
+ private static void viewAuthorizedVehicles() {
+        if (authorizedVehicles.size() == 0) {
+            System.out.println("No authorized vehicles.");
+        } else {
+            System.out.println();
+        }
+    }
