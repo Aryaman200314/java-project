@@ -1,0 +1,8 @@
+public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        // Add some authorized vehicles to the list
+        authorizedVehicles.add("Kf1273, krish ");
+        authorizedVehicles.add("HR26HD126, shushant ");
+        authorizedVehicles.add("PB10GX9223, Aryaman");
